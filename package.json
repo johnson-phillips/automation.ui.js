@@ -1,8 +1,8 @@
 {
   "name": "qe.automation.ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "library to initialize selenium webdriver and basic browser actions to extend for page objects",
-  "main": "index.js",
+  "main": "ui.js",
   "scripts": {
     "test": "node temp/temp1/temp.js"
   },
