@@ -3,10 +3,10 @@ import 'geckodriver';
 import 'iedriver';
 import { Builder, ThenableWebDriver, Capabilities } from 'selenium-webdriver';
 
-export class Browser {
+export default class Browser {
     public driver: ThenableWebDriver;
     public constructor(private capabilities: any|Capabilities) {
-        if(typeof capabilities.hasOwnProperty('remoteURL')) {
+        if(capabilities.hasOwnProperty('remoteURL')) {
             this.driver = new Builder().withCapabilities(capabilities).usingServer(capabilities.remoteURL).build();
         }
         else {

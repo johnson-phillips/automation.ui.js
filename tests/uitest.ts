@@ -1,4 +1,4 @@
-import {Browser} from "../src/browser";
+import Browser from "../src/browser";
 import {By, Capabilities, Key} from "selenium-webdriver";
 
 async function test() {
@@ -8,4 +8,6 @@ async function test() {
     await chrome.driver.close();
 }
 
-test();
+(async () => {
+    await test();
+})();

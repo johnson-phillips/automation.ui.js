@@ -2,7 +2,7 @@ library to initialize selenium webdriver and basic browser actions to extend for
 
 usage for typescript:
 ```
-import {Browser} from "qe.automation.ui";
+import {Browser} from "automation.ui";
 import {By, Capabilities, Key} from "selenium-webdriver";
 
 let browser = new Browser(Capabilities.chrome(),null);
@@ -26,9 +26,10 @@ let browser = new Browser(cbtCaps,remoteURL);
 
 usage nodejs
 ```
-const browser = require("qe.automation.ui");
-const capabilities = require("selenium-webdriver");
-let chrome = new browser.Browser(capabilities.chrome(), null);
+const browser = require("automation.ui").default;
+const capabilities = require("selenium-webdriver").Capabilities;
+let chrome = new Browser(capabilities.chrome());
+chrome.driver.get('https://www.npmjs.com/search?q=automation-ui');
 
 
 ```
