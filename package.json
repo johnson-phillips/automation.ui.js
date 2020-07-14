@@ -1,6 +1,6 @@
 {
   "name": "automation.ui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "library to initialize selenium webdriver and basic browser actions to extend for page objects",
   "main": "dist/src/browser.js",
   "types": "dist/src/browser.d.ts",
@@ -23,13 +23,14 @@
   "homepage": "https://github.com/johnson-phillips/qe.automation.ui#readme",
   "devDependencies": {
     "@types/mocha": "^7.0.2",
+    "@types/selenium-webdriver": "^4.0.9",
+    "automation.report": "^0.2.5",
     "dts-gen": "^0.6.0",
     "ts-node": "^8.6.2",
     "typescript": "^3.8.3"
   },
   "dependencies": {
-    "@types/selenium-webdriver": "latest",
-    "chromedriver": "^83.0.0",
+    "chromedriver": "^83.0.1",
     "geckodriver": "latest",
     "iedriver": "latest",
     "selenium-webdriver": "^3.6.0"
